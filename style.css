@@ -792,14 +792,14 @@
   
   .timeline-item-title {
     font-size: var(--fs-6);
-    line-height: 1.3;
+    /* line-height: 1.3; */
     margin-bottom: 7px;
   }
   
   .timeline-list span {
     color: var(--vegas-gold);
     font-weight: var(--fw-400);
-    line-height: 1.6;
+    /* line-height: 1.6; */
   }
   
   .timeline-item:not(:last-child)::before {
@@ -827,7 +827,7 @@
   .timeline-text {
     color: var(--light-gray);
     font-weight: var(--fw-300);
-    line-height: 1.6;
+    /* line-height: 1.6; */
   }
   
   
@@ -1887,3 +1887,25 @@
     .timeline-text { max-width: 700px; }
   
   }
+  .details-list {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0;
+    margin: 10px 0 0 20px; /* Adjust spacing to fit with your design */
+  }
+  
+  .details-item {
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+    margin-bottom: 5px; /* Space between items */
+    font-size: 0.9rem; /* Slightly smaller text */
+    color: var(--light-gray);
+  }
+  
+  .details-item::before {
+    content: "•"; /* Custom bullet character */
+    position: absolute;
+    left: 0;
+    color: var(--vegas-gold); /* Bullet color */
+    font-size: 1.2rem; /* Size of the bullet */
+  }
+  
